@@ -20,9 +20,6 @@ syn keyword nube_widget     widget                              nextgroup=nube_s
 "else
 syn match nube_ident    '[A-Za-z_][A-Za-z0-9_$.-]*'             nextgroup=nube_ident,nube_section
 
-
-
-
 "Comments
 syn keyword nube_todo       TODO FIXME XXX NOTE                 contained
 syn match nube_comment      '#.*$'                              contains=nube_todo,@spell
@@ -42,7 +39,7 @@ syn region nube_str         start=/['"]/ end=/['"]/ skip=/\v\\./ contains=nube_h
 "Highlighting
 hi link nube_root       Structure
 hi link nube_panels     Structure
-hi link nube_widget     Function
+hi link nube_widget     Structure
 hi link nube_ident      Identifier
 hi link nube_comment    Comment
 hi link nube_comment_ml Comment
