@@ -2,7 +2,8 @@
 "
 "Author:    Zachary Stigall
 "Email:     zirrostig <at> lanfort.org
-"Date:      2013 April 3
+"Date:      2013 April 16
+"License:   Vim
 
 if exists("b:current_syntax")
     finish
@@ -35,7 +36,7 @@ syn match nube_hex          '#\([0-9A-Fa-f]\{2\}\)\+'
 
 "Regions
 syn region nube_section     start=/{/ end=/}/                   fold transparent contained keepend
-syn region nube_str         start=/['"]/ end=/['"]/ skip=/\v\\./ contains=nube_hex
+syn region nube_str         start=/['"]/ end=/['"]/ skip=/\v\\./ contains=nube_hex,@spell
 
 
 "Highlighting
