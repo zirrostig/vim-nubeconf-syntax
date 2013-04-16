@@ -12,7 +12,7 @@ endif
 "Keywords
 syn keyword nube_root       appearance behavior panels          nextgroup=nube_section
 syn keyword nube_panels     top left right bottom               nextgroup=nube_section
-syn keyword nube_widget     widget                              nextgroup=nube_section
+syn keyword nube_widget     widgets                             nextgroup=nube_section
 
 "Identifiers
 "if has("multi_byte")
